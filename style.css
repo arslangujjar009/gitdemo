@@ -1,19 +1,163 @@
 *{
-    padding:0;
-    margin:0;
-    box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-h1{
-    margin:40px;
-    padding-left: 990px;
-    color: gold;
+
+body{
+  background-color: #EBF3FF;
+  font-family: Poppins,Arial, Helvetica, sans-serif;
 }
-h2{
-    color: brown;
-    margin: 70px;
-    height: 60px;
-    background-image: url(https://unsplash.com/photos/four-sailboats-and-a-speedboat-on-the-water-j6C5qIt-B8w);
+
+main{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
 }
-h3{
-    border-bottom: 60px;
+
+li{
+  list-style: none;
+}
+
+.card{
+  background-color: #FFFFFF;
+  height:420px;
+  width: 600px;
+  border-radius: 30px;
+}
+
+.container{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.left-side{
+  background: linear-gradient(180deg,#332DEC, #6241FB);
+  flex: 1;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.left-title{
+  color: #B2A1FF;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.left-side .score{
+  background:linear-gradient(#4e21ca,transparent);
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-side .score h2{
+  font-size: 54px;
+  font-weight: 600;
+  color: white;
+  line-height: 1.1;
+}
+.left-side .score h4{
+  font-size: 14px;
+  font-weight: 600;
+  color: #6656EB;
+}
+
+.left-side h3{
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.left-side p{
+  text-align: center;
+  font-weight: 500;
+  color: #EBF3FF;
+  font-size: 14px;
+  width: 200px;
+  margin-top: -25px;
+}
+
+.right-side{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px 30px;
+  gap: 15px;
+}
+
+.right-side h2{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.score-list{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.score-list .item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.score-list .item div{
+  display: flex;
+  gap: 10px;
+}
+.score-list .item div h3{
+ font-weight: 500;
+ font-size: 18px;
+}
+
+.score-list .item.reaction{
+  background-color:#fff6f5;
+  color: #ff5757;
+  border-radius: 10px;
+}
+.score-list .item.memory{
+  background-color:#fffbf2;
+  color: #ffb01e;
+  border-radius: 10px;
+}
+.score-list .item.verbal{
+  background-color:#f2fafa;
+  color: #00bd91;
+  border-radius: 10px;
+}
+.score-list .item.visual{
+  background-color:#f3f3fd;
+  color: #1125d4;
+  border-radius: 10px;
+}
+
+.card-btn{
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 500;
+  background-color:#303b5a;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 700ms ease;
+}
+
+.card-btn:hover{
+  background-color: #1125d4;
 }
